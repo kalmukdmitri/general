@@ -7,10 +7,8 @@ import time
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="CarWeGo-Analytics-b48469538956.json"
 
-from GBQ2 import BQ_table
 import MS_connect
 from MS_connect import *
-
 import pd_gbq
 from pd_gbq import *
 
