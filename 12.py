@@ -1,5 +1,5 @@
 import json
 while True:
     x = input()
-    x = 'tests1!!'
+    x = 'SYNC UP!!!'
     print(x)
