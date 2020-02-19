@@ -15,6 +15,7 @@ import pd_gbq
 from pd_gbq import *
 
 from MS_json_procc import *
+print('h')
 strt = time.time()
 otgruzki = get_all_entity_mult('demand', expand='positions', limit=100)
 time.sleep(5)
