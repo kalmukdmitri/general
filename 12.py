@@ -1,5 +1,5 @@
 import json
 while True:
     x = input()
-    x = 'h123123123123123123123123123123dcdcsdcedscsadcdi!'
+    x = 'xfxcx1111'
     print(x)

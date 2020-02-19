@@ -130,7 +130,7 @@ gains_df_redif  = pd.DataFrame([redifine_row_df(i[1]) for i in gains_df.iterrows
 gains_gbq.add(gains_df_redif, if_exists = 'replace' )
 
 expendure_query = """SELECT
- row_date  AS month,
+  date(row_date) AS month,
   SUM(row_sum * currency_rate_payday)/100 AS out_payed,
   row_item as reason,
   row_organization as urlico,
@@ -140,7 +140,7 @@ expendure_query = """SELECT
   -SUM(row_sum * currency_rate_payday)/100 AS money
   
 FROM
-  `carwego-analytics.icapbi.all_payments` AS pmnts
+  `carwego-analytics.normalised_tables.all_payments` AS pmnts
 WHERE
   row_type = 'paymentout'
 GROUP BY
