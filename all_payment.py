@@ -15,7 +15,6 @@ from pd_gbq import *
 
 from MS_json_procc import *
 
-from GBQ import BQ_table
 
 def payment_proccess(row):
     row_id = row['id']
